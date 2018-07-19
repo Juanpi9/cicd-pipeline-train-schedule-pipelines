@@ -5,8 +5,7 @@ pipeline {
       steps {
         echo 'Construccion de artifact'
         sh './gradlew build --no-daemon'
-        archiveArtifacts artifacts: 'dist/trainSchedule.zip'
-              
+        archiveArtifacts artifacts: 'dist/trainSchedule.zip'       
       }
     }
   }
